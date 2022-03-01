@@ -29,7 +29,7 @@ gulp.task("build-sass-fonts", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: ["./node_modules/uswds/dist/scss/stylesheets", "./css/settings"],
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -63,7 +63,7 @@ gulp.task("build-sass-custom", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: ["./node_modules/uswds/dist/scss/stylesheets", "./css/settings"],
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -80,7 +80,7 @@ gulp.task("build-next-sass", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: ["./node_modules/uswds/dist/scss/stylesheets", "./css/settings"],
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -97,7 +97,7 @@ gulp.task("build-sass-utilities", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: ["./node_modules/uswds/dist/scss/stylesheets", "./css/settings"],
         outputStyle: "expanded"
       })
       .on("error", handleError)
