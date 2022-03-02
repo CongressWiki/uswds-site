@@ -1,29 +1,53 @@
+<style>
+iframe {
+  border: 0;
+  width: 100%;
+}
+</style>
 <h3 class="site-preview-heading">Standard alerts</h3>
 
-{% capture alerts--info %}
-  {% fractal_component alerts--info %}
-{% endcapture %}{{ alerts--info | strip }}
+<iframe 
+  height: "300"
+  width: "100%"
+  src="http://localhost:6009/iframe.html?id=components-alert--default&args=&viewMode=story" allowfullscreen="true">
+</iframe>
 
-{% capture alerts--warning %}
-  {% fractal_component alerts--warning %}
-{% endcapture %}{{ alerts--warning | strip }}
+<iframe 
+  height: "300"
+  width: "100%"
+  src="http://localhost:6009/iframe.html?id=components-alert--info&args=&viewMode=story" allowfullscreen="true">
+</iframe>
 
-{% capture alerts--error %}
-  {% fractal_component alerts--error %}
-{% endcapture %}{{ alerts--error | strip }}
+<iframe 
+  height: "300"
+  width: "100%"
+  src="http://localhost:6009/iframe.html?id=components-alert--warning&args=&viewMode=story" allowfullscreen="true">
+</iframe>
 
-{% capture alerts--success %}
-  {% fractal_component alerts--success %}
-{% endcapture %}{{ alerts--success | strip }}
+<iframe 
+  height: "300"
+  width: "100%"
+  src="http://localhost:6009/iframe.html?id=components-alert--error&args=&viewMode=story" allowfullscreen="true">
+</iframe>
+
+<iframe 
+  height: "300"
+  width: "100%"
+  src="http://localhost:6009/iframe.html?id=components-alert--success&args=&viewMode=story" allowfullscreen="true">
+</iframe>
 
 <h3 class="site-preview-heading">Slim alert</h3>
 
-{% capture alerts--slim %}
-  {% fractal_component alerts--slim %}
-{% endcapture %}{{ alerts--slim | strip }}
+<iframe 
+  height: "300"
+  width: "100%"
+  src="http://localhost:6009/iframe.html?id=components-alert--slim&args=&viewMode=story" allowfullscreen="true">
+</iframe>
 
 <h3 class="site-preview-heading">Alert with no icon</h3>
 
-{% capture alerts--no-icon %}
-  {% fractal_component alerts--no-icon %}
-{% endcapture %}{{ alerts--no-icon | strip }}
+<iframe 
+  height: "300"
+  width: "100%"
+  src="http://localhost:6009/iframe.html?id=components-alert--no-icon&args=&viewMode=story" allowfullscreen="true">
+</iframe>

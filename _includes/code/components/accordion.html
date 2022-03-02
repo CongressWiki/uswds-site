@@ -1,17 +1,22 @@
+<style>
+iframe {
+  border: 0;
+  width: 100%;
+}
+</style>
 <h3 class="site-preview-heading">Borderless</h3>
 
-{% capture borderless %}
-  {% fractal_component accordion--default %}
-{% endcapture %}{{ borderless | strip }}
+<iframe 
+  src="http://localhost:6009/iframe.html?id=components-accordion--default&args=&viewMode=story" allowfullscreen="true">
+</iframe>
 
 <h3 class="site-preview-heading">Bordered</h3>
-
-{% capture bordered %}
-  {% fractal_component accordion--bordered %}
-{% endcapture %}{{ bordered | strip }}
+<iframe 
+  src="http://localhost:6009/iframe.html?id=components-accordion--default&args=&viewMode=story" allowfullscreen="true">
+</iframe>
 
 <h3 class="site-preview-heading">Multiselectable</h3>
 
-{% capture multiselectable %}
-  {% fractal_component accordion--multiselectable %}
-{% endcapture %}{{ multiselectable | strip }}
+<iframe 
+  src="http://localhost:6009/iframe.html?id=components-accordion--multiselectable&args=&viewMode=story" allowfullscreen="true">
+</iframe>

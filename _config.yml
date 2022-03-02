@@ -126,3 +126,4 @@ exclude:
   - pa11y-results.json
 
 env: dev
+storybook_path: "http://localhost:6009/"
